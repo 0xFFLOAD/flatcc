@@ -65,6 +65,7 @@
 - Fix CMAKE warnings on custom commands with TARGET and DEPENDS (CMP0175).
 - Issue warnings on some potential name conflicts that can break C source
   and add `-s` option to silence warnings (#354).
+- Fix potential UB in pprintint due to integer promotion, and silence warnings.
 
 ## [0.6.1]
 

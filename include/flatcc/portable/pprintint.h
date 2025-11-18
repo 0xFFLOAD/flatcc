@@ -74,6 +74,7 @@ extern "C" {
 #ifndef UINT8_MAX
 #include <stdint.h>
 #endif
+#include <string.h> /* memcpy */
 
 #include "pattributes.h" /* fallthrough */
 
@@ -382,45 +383,49 @@ static int print_uint64(uint64_t n, char *p)
 static int print_int8(int8_t n, char *p)
 {
     int sign;
+    uint8_t v = (uint8_t)n;
 
     if ((sign = n < 0)) {
         *p++ = '-';
-        n = -n;
+        v = (uint8_t)-v;
     }
-    return print_uint8((uint8_t)n, p) + sign;
+    return print_uint8(v, p) + sign;
 }
 
 static int print_int16(int16_t n, char *p)
 {
     int sign;
+    uint16_t v = (uint16_t)n;
 
     if ((sign = n < 0)) {
         *p++ = '-';
-        n = -n;
+        v = (uint16_t)-v;
     }
-    return print_uint16((uint16_t)n, p) + sign;
+    return print_uint16(v, p) + sign;
 }
 
 static int print_int32(int32_t n, char *p)
 {
     int sign;
+    uint32_t v = (uint32_t)n;
 
     if ((sign = n < 0)) {
         *p++ = '-';
-        n = -n;
+        v = (uint32_t)-v;
     }
-    return print_uint32((uint32_t)n, p) + sign;
+    return print_uint32(v, p) + sign;
 }
 
 static int print_int64(int64_t n, char *p)
 {
     int sign;
+    uint64_t v = (uint64_t)n;
 
     if ((sign = n < 0)) {
         *p++ = '-';
-        n = -n;
+        v = (uint64_t)-v;
     }
-    return print_uint64((uint64_t)n, p) + sign;
+    return print_uint64(v, p) + sign;
 }
 
 #define __define_print_int_simple(NAME, UNAME, T, UT)                       \
