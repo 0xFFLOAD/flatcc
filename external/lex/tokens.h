@@ -527,7 +527,7 @@ static void lex_fprint_token(FILE *fp,
     switch (token) {
     case LEX_TOK_EOS:
     case LEX_TOK_CTRL:
-        sprintf(buf, "^%02x", (int)*first);
+        snprintf(buf, sizeof(buf), "^%02x", (int)*first);
         lexeme = buf;
         len = strlen(buf);
         break;

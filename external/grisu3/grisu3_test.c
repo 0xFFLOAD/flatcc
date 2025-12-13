@@ -77,15 +77,15 @@ int test_suite()
     fail += test_parse_double("3.2897984798741413E+194");
     fail += test_parse_double("-3.2897984798741413E-194");
 
-    sprintf(buf, "3289798479874141.314124124128497098e109");
+    snprintf(buf, sizeof(buf), "3289798479874141.314124124128497098e109");
     fail += test_parse_double(buf);
-    sprintf(buf, "3289798479874141.314124124128497098e209");
+    snprintf(buf, sizeof(buf), "3289798479874141.314124124128497098e209");
     fail += test_parse_double(buf);
-    sprintf(buf, "-3289798479874141.314124124128497098e209");
+    snprintf(buf, sizeof(buf), "-3289798479874141.314124124128497098e209");
     fail += test_parse_double(buf);
-    sprintf(buf, "3289798479874141.314124124128497098e+209");
+    snprintf(buf, sizeof(buf), "3289798479874141.314124124128497098e+209");
     fail += test_parse_double(buf);
-    sprintf(buf, "-3289798479874141.314124124128497098e-209");
+    snprintf(buf, sizeof(buf), "-3289798479874141.314124124128497098e-209");
     fail += test_parse_double(buf);
 
     return fail;

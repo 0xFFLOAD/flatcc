@@ -1,3 +1,5 @@
+NOTE: vendored upstream component tests. See upstream flatcc project for full testing docs.
+
 NOTE: shell scripts driven by flatcc/test/test.sh have been ported to CMake.
 use flatcc/scripts/test.sh to drive CMake tests.
 

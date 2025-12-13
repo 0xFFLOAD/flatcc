@@ -283,7 +283,8 @@ static dict_entry_t *build_compound_dict(fb_compound_type_t *ct, int *count_out)
             de->text = strbuf;
             memcpy(strbuf, member->symbol.ident->text, (size_t)member->symbol.ident->len);
             strbuf += member->symbol.ident->len;
-            strcpy(strbuf, "_type");
+            /* copy literal including terminating NUL */
+            memcpy(strbuf, "_type", 6);
             strbuf += 6;
             de->data = member;
             de->hint = 1;

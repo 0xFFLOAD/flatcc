@@ -254,15 +254,15 @@ static inline size_t print_literal(fb_scalar_type_t scalar_type, const fb_value_
     switch (value->type) {
     case vt_uint:
         cast = scalar_cast(scalar_type);
-        return (size_t)sprintf(literal, "%s(%"PRIu64")", cast, (uint64_t)value->u);
+        return (size_t)snprintf(literal, sizeof(fb_literal_t), "%s(%"PRIu64")", cast, (uint64_t)value->u);
         break;
     case vt_int:
         cast = scalar_cast(scalar_type);
-        return (size_t)sprintf(literal, "%s(%"PRId64")", cast, (int64_t)value->i);
+        return (size_t)snprintf(literal, sizeof(fb_literal_t), "%s(%"PRId64")", cast, (int64_t)value->i);
         break;
     case vt_bool:
         cast = scalar_cast(scalar_type);
-        return (size_t)sprintf(literal, "%s(%u)", cast, (unsigned)value->b);
+        return (size_t)snprintf(literal, sizeof(fb_literal_t), "%s(%u)", cast, (unsigned)value->b);
         break;
     case vt_float:
         /*
@@ -273,9 +273,9 @@ static inline size_t print_literal(fb_scalar_type_t scalar_type, const fb_value_
          * source.
          */
         if (scalar_type == fb_float) {
-            return (size_t)sprintf(literal, "%#.9gf", (float)value->f);
+            return (size_t)snprintf(literal, sizeof(fb_literal_t), "%#.9gf", (float)value->f);
         } else {
-            return (size_t)sprintf(literal, "%#.17g", (double)value->f);
+            return (size_t)snprintf(literal, sizeof(fb_literal_t), "%#.17g", (double)value->f);
         }
         break;
     default:

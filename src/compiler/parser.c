@@ -35,7 +35,8 @@ int fb_print_error(fb_parser_t *P, const char * format, ...)
     n = vsnprintf (buf, ERROR_BUFSIZ, format, ap);
     va_end (ap);
     if (n >= ERROR_BUFSIZ) {
-        strcpy(buf + ERROR_BUFSIZ - 5, "...\n");
+        /* Indicate truncation without invoking unsafe strcpy() */
+        snprintf(buf + ERROR_BUFSIZ - 5, 5, "...\n");
         n = ERROR_BUFSIZ - 1;
     }
     P->error_out(P->error_ctx, buf, (size_t)n);

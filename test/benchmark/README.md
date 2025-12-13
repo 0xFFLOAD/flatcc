@@ -1,3 +1,5 @@
+NOTE: vendored upstream benchmarks for flatcc. See upstream project for details.
+
 # FlatBench
 
 This is based on the Google FlatBuffer benchmark schema, but the

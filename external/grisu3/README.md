@@ -1,3 +1,5 @@
+NOTE: vendored upstream component (grisu3). This is a vendor snapshot; see upstream for full docs.
+
 Implements the grisu3 floating point printing and parsing algorithm
 based on earlier work:
 

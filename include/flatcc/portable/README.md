@@ -1,3 +1,5 @@
+NOTE: vendored upstream portability helpers (flatcc/include/flatcc/portable). This is a vendor snapshot.
+
 A small library for adding C11 compatibility to older C compilers, but
 only a small highly useful subset such as static assertions, inline
 functions and alignment.

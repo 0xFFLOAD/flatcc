@@ -1530,7 +1530,7 @@ static int process_table(fb_parser_t *P, fb_compound_type_t *ct)
                         error_sym(P, &ct->symbol, "... more id's missing");
                         break;
                     }
-                    sprintf(msg_buf,  "id range not consequtive from 0, missing id: %"PRIu64"", i);
+                    snprintf(msg_buf, sizeof(msg_buf),  "id range not consequtive from 0, missing id: %"PRIu64"", i);
                     error_sym(P, &ct->symbol, msg_buf);
                 }
             }

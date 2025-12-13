@@ -1,3 +1,5 @@
+NOTE: vendored upstream component (flatcc/external/hash). This is a vendor snapshot; see upstream for full docs.
+
 Generic hash table implementation with focus on being minimally
 invasive on existing items to be indexed.
 

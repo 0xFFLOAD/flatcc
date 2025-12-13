@@ -54,7 +54,8 @@ int encode(void *bench, void *buffer, size_t *size)
 
     (void)bench;
 
-    strcpy(fbc.location, "https://www.example.com/myurl/");
+    strncpy(fbc.location, "https://www.example.com/myurl/", sizeof(fbc.location) - 1);
+    fbc.location[sizeof(fbc.location) - 1] = '\0';
     fbc.location_len = strlen(fbc.location);
     fbc.fruit = Bananas;
     fbc.initialized = 1;
@@ -62,7 +63,8 @@ int encode(void *bench, void *buffer, size_t *size)
       foobar = &fbc.list[i];
       foobar->rating = 3.1415432432445543543 + i;
       foobar->postfix = '!' + i;
-      strcpy(foobar->name, "Hello, World!");
+      strncpy(foobar->name, "Hello, World!", sizeof(foobar->name) - 1);
+      foobar->name[sizeof(foobar->name) - 1] = '\0';
       foobar->name_len = strlen(foobar->name);
       bar = &foobar->sibling;
       bar->ratio = 3.14159f + i;

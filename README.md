@@ -1,3 +1,6 @@
+NOTE: vendored upstream copy of flatcc. This README is from upstream `dvidelabs/flatcc` and
+serves as a vendor snapshot. For authoritative docs, see the upstream project.
+
 Ubuntu, macOS and Windows: [![Build Status](https://github.com/dvidelabs/flatcc/actions/workflows/ci.yml/badge.svg)](https://github.com/dvidelabs/flatcc/actions/workflows/ci.yml)
 Windows: [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/dvidelabs/flatcc?branch=master&svg=true)](https://ci.appveyor.com/project/dvidelabs/flatcc)
 Weekly: [![Build Status](https://github.com/dvidelabs/flatcc/actions/workflows/weekly.yml/badge.svg)](https://github.com/dvidelabs/flatcc/actions/workflows/weekly.yml)
