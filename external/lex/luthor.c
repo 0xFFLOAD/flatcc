@@ -31,7 +31,7 @@
 
 #include "luthor.h"
 
-#ifdef LEX_C99_NUMERIC
+#ifdef LEX_c99_NUMERIC
 #define LEX_C_NUMERIC
 #define LEX_HEX_FLOAT_NUMERIC
 #define LEX_BINARY_NUMERIC
@@ -278,7 +278,7 @@ static int lex(const char *buf, size_t len, int mode, void *context)
     case LEX_MODE_C_BLOCK_COMMENT:
         goto lex_mode_c_block_comment;
 #endif
-#if defined(LEX_SHELL_LINE_COMMENT) || defined(LEX_C99_LINE_COMMENT)
+#if defined(LEX_SHELL_LINE_COMMENT) || defined(LEX_c99_LINE_COMMENT)
     case LEX_MODE_LINE_COMMENT:
         goto lex_mode_line_comment;
 #endif
@@ -597,11 +597,11 @@ lex_mode_python_block_string_sq:
 #endif
 
 /*
- * We don't really care if it is a shell style comment or a C99,
+ * We don't really care if it is a shell style comment or a c99,
  * or any other line oriented commment, as the termination is
  * the same.
  */
-#if defined(LEX_SHELL_LINE_COMMENT) || defined(LEX_C99_LINE_COMMENT)
+#if defined(LEX_SHELL_LINE_COMMENT) || defined(LEX_c99_LINE_COMMENT)
 lex_mode_line_comment:
 
     mode = LEX_MODE_LINE_COMMENT;
@@ -859,7 +859,7 @@ lex_mode_normal:
             /*
              * Line comment excluding terminal line break.
              *
-             * See also C99 line comment `//`.
+             * See also c99 line comment `//`.
              *
              * Julia uses `#=` and `=#` for nested block comments.
              * (According to Julia developers, '#=` is motivated by `=`
@@ -888,7 +888,7 @@ lex_mode_normal:
             ++p;
             if (p != q) {
                 switch (*p) {
-#ifdef LEX_C99_LINE_COMMENT
+#ifdef LEX_c99_LINE_COMMENT
                 case '/':
                     ++p;
                     p += p != q && (*p == '/' || *p == '!');

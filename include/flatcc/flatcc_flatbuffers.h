@@ -20,7 +20,7 @@ extern "C" {
 #include "flatcc/flatcc_portable.h"
 #endif
 #include "flatcc/portable/pwarnings.h"
-/* Needed by C99 compilers without FLATCC_PORTABLE. */
+/* Needed by c99 compilers without FLATCC_PORTABLE. */
 #include "flatcc/portable/pstdalign.h"
 
 /* Handle fallthrough attribute in switch statements. */

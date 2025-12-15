@@ -25,7 +25,7 @@
 
 
 #if (defined(__STDC__) && __STDC__ && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L)
-/* C99 or newer */
+/* c99 or newer */
 #elif defined(__restrict)
 /* Some C/C++ compilers use alternative syntax. If these are defines, we can detect them. */
 #define restrict __restrict

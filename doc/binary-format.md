@@ -200,7 +200,7 @@ FlatBuffers are based on the following primitives that are 8, 16, 32 and
     flatbuffers_true (flatbuffers_bool assign as 1, read as != 0)
     flatbuffers_false (flatbuffers_bool = 0)
 
-Note that a C99 `bool` type has no defined size or sign so it is not an
+Note that a c99 `bool` type has no defined size or sign so it is not an
 exact representation of a flatbuffers boolean encoding.
 
 When a stored value is interpreted as boolean it should not be assumed

@@ -110,7 +110,7 @@ extern "C" {
 #  undef XXH_PUBLIC_API
 #  if defined(__GNUC__)
 #    define XXH_PUBLIC_API static __inline __attribute__((unused))
-#  elif defined (__cplusplus) || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */)
+#  elif defined (__cplusplus) || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* c99 */)
 #    define XXH_PUBLIC_API static inline
 #  elif defined(_MSC_VER)
 #    define XXH_PUBLIC_API static __inline
@@ -299,7 +299,7 @@ typedef enum { XXH_OK=0, XXH_ERROR } XXH_errorcode;
 typedef uint32_t XXH32_hash_t;
 #elif !defined (__VMS) \
   && (defined (__cplusplus) \
-  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
+  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* c99 */) )
 #   include <stdint.h>
     typedef uint32_t XXH32_hash_t;
 #else
@@ -562,7 +562,7 @@ XXH_PUBLIC_API XXH32_hash_t XXH32_hashFromCanonical(const XXH32_canonical_t* src
 typedef uint64_t XXH64_hash_t;
 #elif !defined (__VMS) \
   && (defined (__cplusplus) \
-  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
+  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* c99 */) )
 #  include <stdint.h>
    typedef uint64_t XXH64_hash_t;
 #else
@@ -1356,7 +1356,7 @@ static void* XXH_memcpy(void* dest, const void* src, size_t size)
 #  define XXH_FORCE_INLINE static __inline__ __attribute__((always_inline, unused))
 #  define XXH_NO_INLINE static __attribute__((noinline))
 #elif defined (__cplusplus) \
-  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L))   /* C99 */
+  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L))   /* c99 */
 #  define XXH_FORCE_INLINE static inline
 #  define XXH_NO_INLINE static
 #else
@@ -1401,7 +1401,7 @@ static void* XXH_memcpy(void* dest, const void* src, size_t size)
 ***************************************/
 #if !defined (__VMS) \
  && (defined (__cplusplus) \
- || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
+ || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* c99 */) )
 # include <stdint.h>
   typedef uint8_t xxh_u8;
 #else
@@ -2680,7 +2680,7 @@ XXH_PUBLIC_API XXH64_hash_t XXH64_hashFromCanonical(const XXH64_canonical_t* src
 
 /* ===   Compiler specifics   === */
 
-#if defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L   /* >= C99 */
+#if defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L   /* >= c99 */
 #  define XXH_RESTRICT   restrict
 #else
 /* Note: it might be useful to define __restrict or __restrict__ for some C++ compilers */
@@ -3648,7 +3648,7 @@ XXH_FORCE_INLINE void XXH_writeLE64(void* dst, xxh_u64 v64)
  */
 #if !defined (__VMS) \
   && (defined (__cplusplus) \
-  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
+  || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* c99 */) )
     typedef int64_t xxh_i64;
 #else
     /* the following type must have a width of 64-bit */

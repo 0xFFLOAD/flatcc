@@ -10,7 +10,7 @@ extern "C" {
  * warnings.
  *
  * This file is intended for global disabling of warnings that shouldn't
- * be present in C11 or perhaps C99, or a generally just noise where
+ * be present in C11 or perhaps c99, or a generally just noise where
  * recent clang / gcc compile cleanly with high warning levels.
  */
 
@@ -37,7 +37,7 @@ extern "C" {
 
 /*
  * Anonymous union in struct is valid in C11 and has been supported in
- * GCC and Clang for a while, but it is not C99. MSVC also handles it,
+ * GCC and Clang for a while, but it is not c99. MSVC also handles it,
  * but warns. Truly portable code should perhaps not use this feature,
  * but this is not the place to complain about it.
  */

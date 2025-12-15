@@ -161,7 +161,7 @@ void error_ref_sym(fb_parser_t *P, fb_ref_t *ref, const char *msg, fb_symbol_t *
  * Flatbuffers also support /// on a single line for documentation but
  * we can handle that within the normal line comment parsing logic.
  */
-#define LEX_C99_LINE_COMMENT
+#define LEX_c99_LINE_COMMENT
 /*
  * String escapes are not defined in fb schema but it only uses strings
  * for attribute, namespace, file ext, and file id. For JSON objects we

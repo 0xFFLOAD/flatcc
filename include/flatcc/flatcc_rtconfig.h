@@ -88,11 +88,11 @@ extern "C" {
 #endif
 
 /*
- * Print float and double values with C99 hexadecimal floating point
+ * Print float and double values with c99 hexadecimal floating point
  * notation. This option is not valid JSON but it avoids precision
  * loss, correctly handles NaN, +/-Infinity and is significantly faster
  * to parse and print. Some JSON parsers rely on strtod which does
- * support hexadecimal floating points when C99 compliant.
+ * support hexadecimal floating points when c99 compliant.
  */
 #ifndef FLATCC_JSON_PRINT_HEX_FLOAT
 #define FLATCC_JSON_PRINT_HEX_FLOAT 0

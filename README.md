@@ -463,7 +463,7 @@ portable library does not work around C++ limitations in stdalign.h and
 stdint.h before GCC 4.7. This could be fixed but is not a priority.
 
 The monster sample does not work with MSVC 2010 because it intentionally
-uses C99 style code to better follow the C++ version.
+uses c99 style code to better follow the C++ version.
 
 The build option `FLATCC_TEST` can be used to disable all tests which
 might make flatcc compile on platforms that are otherwise problematic.
@@ -2703,11 +2703,11 @@ See [Security Considerations].
 
 FlatCC coding style is largely similar to the [WebKit Style], with the following notable exceptions:
 
-* Syntax requiring C99 or later is avoided, except `<stdint.h>` types are made available.
+* Syntax requiring c99 or later is avoided, except `<stdint.h>` types are made available.
 * If conditions always use curly brackets, or single line statements without linebreak: `if (err) return -1;`.
 * NULL and nullptr are generally just represented as `0`.
-* Comments are old-school C-style (pre C99). Text is generally cased with punctuation: `/* A comment. */`
-* `true` and `false` keywords are not used (pre C99).
+* Comments are old-school C-style (pre c99). Text is generally cased with punctuation: `/* A comment. */`
+* `true` and `false` keywords are not used (pre c99).
 * In code generation there is essentially no formatting to avoid excessive bloat.
 * Struct names and other types is lower case since this is C, not C++.
 * `snake_case` is used over `camelCase`.

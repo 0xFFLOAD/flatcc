@@ -4,7 +4,7 @@
 #ifndef PRId16
 
 #if (defined(__STDC__) && __STDC__ && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L)
-/* C99 or newer */
+/* c99 or newer */
 #include <inttypes.h>
 #else
 

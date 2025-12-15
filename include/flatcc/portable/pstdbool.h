@@ -18,7 +18,7 @@
 
 #elif (defined(__STDC__) && __STDC__ && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L)
 
-/* C99 or newer, and older than C23  */
+/* c99 or newer, and older than C23  */
 #define bool _Bool
 #define true 1
 #define false 0

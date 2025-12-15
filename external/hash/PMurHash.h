@@ -19,7 +19,7 @@
   #define MH_UINT32 unsigned long
 #endif
 
-/* If the compiler says it's C99 then take its word for it */
+/* If the compiler says it's c99 then take its word for it */
 #if !defined(MH_UINT32) && ( \
      defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L )
   #include <stdint.h>

@@ -33,7 +33,7 @@
  *
  *  Version 0.1.15.2
  *
- *  The ANSI C standard committee, for the C99 standard, specified the
+ *  The ANSI C standard committee, for the c99 standard, specified the
  *  inclusion of a new standard include file called stdint.h.  This is
  *  a very useful and long desired include file which contains several
  *  very precise definitions for integer scalar types that is
@@ -42,7 +42,7 @@
  *  integer libraries and so on.  But for most developers its likely
  *  useful just for programming sanity.
  *
- *  The problem is that some compiler vendors chose to ignore the C99
+ *  The problem is that some compiler vendors chose to ignore the c99
  *  standard and some older compilers have no opportunity to be updated.
  *  Because of this situation, simply including stdint.h in your code
  *  makes it unportable.
@@ -77,7 +77,7 @@
  *
  *    6) 64 bit integers may or may not be defined.  Test for their
  *       presence with the test: #ifdef INT64_MAX or #ifdef UINT64_MAX.
- *       Note that this is different from the C99 specification which
+ *       Note that this is different from the c99 specification which
  *       requires the existence of 64 bit support in the compiler.  If
  *       this is not defined for your platform, yet it is capable of
  *       dealing with 64 bits then it is because this file has not yet
@@ -139,7 +139,7 @@
  *       PRINTF_INTPTR_MODIFIER is not defined for some systems which
  *       provide their own stdint.h.  PRINTF_INT64_MODIFIER is not
  *       defined if INT64_MAX is not defined.  These are an extension
- *       beyond what C99 specifies must be in stdint.h.
+ *       beyond what c99 specifies must be in stdint.h.
  *
  *       In addition, the following macros are defined:
  *
@@ -161,7 +161,7 @@
  *
  *       Which specifies the maximum number of characters required to
  *       print the number of that type in either hexadecimal or decimal.
- *       These are an extension beyond what C99 specifies must be in
+ *       These are an extension beyond what c99 specifies must be in
  *       stdint.h.
  *
  *  Compilers tested (all with 0 warnings at their highest respective
