@@ -1,0 +1,88 @@
+test/emit_test/CMakeFiles/emit_test.dir/emit_test.c.o: \
+ /home/sam/roger/flatcc/test/emit_test/emit_test.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+ /usr/include/aarch64-linux-gnu/bits/timesize.h \
+ /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+ /usr/include/aarch64-linux-gnu/bits/long-double.h \
+ /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+ /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
+ /usr/include/aarch64-linux-gnu/bits/types.h \
+ /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+ /usr/include/aarch64-linux-gnu/bits/time64.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+ /usr/include/assert.h \
+ /home/sam/roger/flatcc/test/emit_test/generated/emit_test_builder.h \
+ /home/sam/roger/flatcc/test/emit_test/generated/emit_test_reader.h \
+ /home/sam/roger/flatcc/test/emit_test/generated/flatbuffers_common_reader.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_prologue.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pdiagnostic_push.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pdiagnostic.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_flatbuffers.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pstatic_assert.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pwarnings.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pstdalign.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdalign.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/paligned_alloc.h \
+ /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pattributes.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_alloc.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/paligned_alloc.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_assert.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pendian.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pstdint.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/signal.h \
+ /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
+ /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/aarch64-linux-gnu/bits/signal_ext.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
+ /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-least.h /usr/include/endian.h \
+ /usr/include/aarch64-linux-gnu/bits/endian.h \
+ /usr/include/aarch64-linux-gnu/bits/endianness.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pendian_detect.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pmemaccess.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_types.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_endian.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_accessors.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_identifier.h \
+ /usr/include/string.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_epilogue.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pdiagnostic_pop.h \
+ /home/sam/roger/flatcc/test/emit_test/generated/flatbuffers_common_builder.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_builder.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_flatbuffers.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_emitter.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_iov.h \
+ /home/sam/roger/flatcc/include/flatcc/flatcc_refmap.h \
+ /home/sam/roger/flatcc/include/flatcc/support/hexdump.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pparsefp.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pdiagnostic_push.h \
+ /usr/include/math.h /usr/include/aarch64-linux-gnu/bits/math-vector.h \
+ /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-macros.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/grisu3_parse.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/grisu3_math.h \
+ /home/sam/roger/flatcc/include/flatcc/portable/pdiagnostic_pop.h
